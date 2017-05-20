@@ -6,29 +6,29 @@
     <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <build>
-        <sourceDirectory>src</sourceDirectory>
+        <sourceDirectory>src/main/java</sourceDirectory>
         <resources>
-            <resource>
-                <directory>src</directory>
-                <includes>
-                    <include>**</include>
-                </includes>
-                <excludes>
-                    <exclude>**/*.java</exclude>
-                </excludes>
-            </resource>
-            <resource>
-                <directory>src/main/java</directory>
-            </resource>
-            <resource>
-                <directory>src/main</directory>
-                <includes>
-                    <include>**</include>
-                </includes>
-                <excludes>
-                    <exclude>**/*.java</exclude>
-                </excludes>
-            </resource>
+            <!--<resource>-->
+            <!--    <directory>src</directory>-->
+            <!--    <includes>-->
+            <!--        <include>**</include>-->
+            <!--    </includes>-->
+            <!--    <excludes>-->
+            <!--        <exclude>**/*.java</exclude>-->
+            <!--    </excludes>-->
+            <!--</resource>-->
+            <!--<resource>-->
+            <!--    <directory>src/main/java</directory>-->
+            <!--</resource>-->
+            <!--<resource>-->
+            <!--    <directory>src/main</directory>-->
+            <!--    <includes>-->
+            <!--        <include>**</include>-->
+            <!--    </includes>-->
+            <!--    <excludes>-->
+            <!--        <exclude>**/*.java</exclude>-->
+            <!--    </excludes>-->
+            <!--</resource>-->
         </resources>
         <plugins>
             <plugin>
@@ -86,10 +86,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <project.cronospass.resource mimetype="folder/src">src</project.cronospass.resource>
         <project.cronospass.resource mimetype="folder/libs">lib</project.cronospass.resource>
         <project.cronospass.resource mimetype="folder/src">src/main/java</project.cronospass.resource>
         <project.cronospass.resource mimetype="folder/web">WebContent</project.cronospass.resource>
-        <project.cronospass.resource mimetype="folder/src">src/main</project.cronospass.resource>
     </properties>
 </project>
